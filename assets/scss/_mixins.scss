@@ -1,0 +1,37 @@
+@mixin inputs {
+    background: $primaryTransparent;
+    border: $textColor 1px solid;
+    border-radius: 4px;
+    color: $textColor;
+    transition: $transition;
+
+    &:focus {
+        background: $primaryColor;
+        color: $textColor;
+        border: $textColor;
+        box-shadow: inset 0 1px 1px rgba(253, 182, 30, 0.7), 0 0 10px rgba(253, 182, 30, 0.7);
+    }
+}
+
+@mixin button {
+    background: $textColor;
+    color: $gold;
+    font-size: 1.2rem;
+    transition: $transition;
+
+    &:hover {
+        background: $secondaryTransparent;
+    }
+}
+
+@mixin links {
+    text-decoration: none;
+    color: $textColor;
+    font-weight: 700;
+    transition: $transition;
+
+    &:hover {
+        transform: scale(1.15);
+        color: $gold;
+    }
+}
